@@ -1,30 +1,40 @@
+/* this is the universal selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* this is the element selector */
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/*  this header is for line 11, located at the top of the page with a selected font, 
+    the font color, and a padding along with the color. */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* this is for line 12 for header setting the display of the text "Horiseon" and the font size. 
+    Changed: Removed .header from this code. */
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* this is a class selector for line 12 "seo" for the header setting the text "seo" in a specific color. 
+    Changed: Removed .header from this code because we changed line 11 and 26 to semantic; header. */
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
+/*  this is for line 13-25 by adding a padding at the top for 15 pixels shifting it downwards, 
+    margin-right 20 pixels by shifting it to the left, displaying the font and text to the right side of the header page. */
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,24 +42,36 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+/* this is for line 14-24, everything in the header ul will have the list style type as none. Removing the bullet points.
+    Changed: Removed .header from this code because we changed line 11 and 26 to semantic; header.  */
+ul {
     list-style-type: none;
 }
 
-.header div ul li {
+/*  this is line 15-23, everything in the header div list will have a display inline block and the 
+    texts will be 25 pixels apart from each other.
+    Changed: Removed .header from this code because we changed line 11 and 26 to semantic; header.  */
+li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* this sets the hyperlink from line 16,19, and 22 a specific color. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* this sets all pargraphs, <p>, to a specific font size; 16 pixels and added padding-bottom 
+    to give it a little spacing on the bottom of the paragraphs. */
 p {
     font-size: 16px;
+    padding-bottom: 25.5px;
 }
 
+/*  this class selector will display the image located in the image folder with a specific height of 800 pixels, 100% width 
+    meaning it will reach both left and right sides of the webpage, a margin of 25 pixels push upwards from the bottom,
+    and it's size and position. */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +81,30 @@ p {
     background-position: center;
 }
 
+/*  this class selector will apply to any code with "class = "float-left"", making the content float left with a 
+    margin right of 25 pixels pushed towards to the left side. */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/*  this class selector will apply to any code with "class = "float-right"", making the content float right with a 
+    margin left of 25 pixels pushed towards to the right side. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/*  this is for line 28-63; giving everything in this "class = content" a width of 75% with a displayed inline block 
+    and margin 20 pixels pushed towards to the right of the page. */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/*  this is for line 64-88; everything in this "class = benefits" will have a specific text, color, width, height, 
+    padding of 20 pixels from the border, floating right and pushed towards the left by 20 pixels. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,55 +116,34 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* removed the duplicates and renamed the class selector to update lines 65-87. 
+    Giving it a margin from the bottom by 32 pixels; shifting the content upwards and color of white. */
+.benefit-image {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* removed the duplicates and renamed the class selector to update lines 67, 74 and 81.
+    Giving it a margin from the bottom by 10 pixels; shifting the content upwards and aligning the text to be in the center. */
+.benefit-image h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* removed the duplicates and renamed the class selector to update lines 68, 75, and 82.
+    The images in this class selector will have a display block with a maximum width of 150 pixels 
+    along with a margin of 10 pixels. */
+.benefit-image img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* removed the duplicates and renamed the class selector as they had similar codes on line 30,41, and 52. 
+    This gives the content a margin at the bottom of 20 pixels, padding of 50 pixels, a height of 300 pixels
+    a designated font family of Gill Sans with defaults of Gill Sans MT, Calibri and etc if the font is not available,
+    background color and text color as well. */
+.links {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,51 +152,19 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* the class selector links image will all have a maximum height of 200 pixels on line 32, 43, and 54. */
+.links img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* all <h2> will have a margin bottom of 20 pixels and font size of 36 pixels on line 34, 45, and 56. */
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*  this is for the footer on line 73-78; everything in this selector will have the text aligned in the center
+    with a specific text font, and a padding of 30 pixels from the border from all sides. */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +172,7 @@ p {
     text-align: center;
 }
 
+/* this is for line 74; giving the text "Made with ❤️️ by Horiseon" a font size of 20 pixels. */
 .footer h2 {
     font-size: 20px;
 }
