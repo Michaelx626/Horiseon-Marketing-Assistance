@@ -12,7 +12,7 @@ You can access the webpage by clicking [here](https://michaelx626.github.io/Hori
 
 ## Screenshot
 
-![Right click on your mouse or pad to open up Chrome Dev Tools to inspect the different elements used to create this awesome webpage.](https://github.com/Michaelx626/Horiseon-Marketing-Assistance/blob/main/Develop/assets/images/Screen%20Shot%202022-12-07%20at%208.26.10%20PM.png).
+![Right click on your mouse or pad to open up Chrome Dev Tools to inspect the different elements used to create this awesome webpage.](https://github.com/Michaelx626/Horiseon-s-Marketing-Assistance/blob/main/Develop/assets/images/Screen%20Shot%202022-12-07%20at%208.26.10%20PM.png).
 
 ## Credits
 Special thanks to Xandromus, https://github.com/coding-boot-camp/urban-octo-telegram, for providing this beautiful task!
